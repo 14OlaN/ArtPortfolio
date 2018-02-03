@@ -5,22 +5,37 @@ body {
 	font-family: 'Raleway';
 	-webkit-font-smoothing: antialiased;
 }
-h2{
-	font-size: 1.5em;
+h2 {
+	font-size: 25px;
 	color: #D5D5D5;
 }
-
+h3 {
+	font-size: 20px;
+	color: #BFBFBF;
+}
 .title-container {
 	display: flex;
+	flex-direction: column;
 	margin: 20px;
 }
 .title {
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	color: #ffffff;
     font-family: 'Raleway';
-    font-weight: 500;
-    font-size: 36px;
+    font-weight: 550;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.subtitle{
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #DEDEDE;
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-size: 28px;
     text-transform: uppercase;
 }
 .navigation-container {
@@ -28,21 +43,18 @@ h2{
 	justify-content: center;
 	align-items: center;
 }
-
 .tab {
 	border: none;
 	background: unset;
 	color: inherit;
-	font-size: 1.3em;
+	font-size: 20px;
 	padding: 10px 50px;
 	text-decoration: none;
 }
-
 .dropdown {
 	position: relative;
 	display: inline-block;
 }
-
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -50,18 +62,15 @@ h2{
 	min-width: 160px;
 	z-index: 1;
 }
-
 .dropdown-content a {
 	color: inherit;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 }
-/*hover dropdown boxes*/
 .dropdown-content a:hover {
 	background-color: #3d3d3d;
 }
-/*hover dropdown text*/
 .dropdown:hover .dropdown-content {
 	display: block;
 	color: #9d9d9d;
@@ -70,17 +79,18 @@ h2{
 	background-color: #474747;
 	color: #9d9d9d;
 }
-/*hover above tab w/ dropdown*/
 .dropdown-content:hover .tab {
 	background-color: #474747;
 	color: #9d9d9d;
 }
-/*hover above home*/
 .tab:hover {
 	background-color: #474747;
 	color: #9d9d9d;
 }
-
+.pagetitle {
+	font-size: 30px;
+	margin: 40px 11%;
+}
 .content-container {
-	margin: 40px 150px;
+	margin: 40px 11%;
 }
