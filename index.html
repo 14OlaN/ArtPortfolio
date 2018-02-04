@@ -58,5 +58,15 @@
 			</table>
 		</div>
 	</div>
+		<!--SCRIPT-->
+	<script type="text/javascript">
+		var tab = document.getElementsByClassName("tab");
+		var dc = document.getElementsByClassName("dropdown-content");
+		var j;
+		for (var i = 0; i < 2; i++) {
+			j=i+1;
+   			dc[i].style.width = "" + tab[j].getBoundingClientRect().width + 'px';
+		}
+	</script>
 </body>
 </html>

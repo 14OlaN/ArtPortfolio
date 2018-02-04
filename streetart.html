@@ -70,8 +70,10 @@
 		var dc = document.getElementsByClassName("dropdown-content");
 		console.log("tab",tab);
 		console.log("dc",dc);
+		var j;
 		for (var i = 0; i < 2; i++) {
-   			dc[i].style.width = "" + tab[i+1].getBoundingClientRect().width + 'px';
+			j=i+1;
+   			dc[i].style.width = "" + tab[j].getBoundingClientRect().width + 'px';
 		}
 	</script>
 </body>

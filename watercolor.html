@@ -84,5 +84,17 @@
 			<p>My third technique was used in the columns holding up the glass structures. I would first paint the sides of it, which I wanted to be darker, with thicker paint. Then I would paint the middle with the diluted paint while also blending the darker areas to create a smooth transition between the highlight and shadow. To create a stronger contrast, I also added only water to the middle of the column by repeatedly touching the paper, which pushed the pigment away and to the sides.</p>
 		</div>
 	</div>
+		<!--SCRIPT-->
+	<script type="text/javascript">
+		var tab = document.getElementsByClassName("tab");
+		var dc = document.getElementsByClassName("dropdown-content");
+		console.log("tab",tab);
+		console.log("dc",dc);
+		var j;
+		for (var i = 0; i < 2; i++) {
+			j=i+1;
+   			dc[i].style.width = "" + tab[j].getBoundingClientRect().width + 'px';
+		}
+	</script>
 </body>
 </html>
