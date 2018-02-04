@@ -64,5 +64,15 @@
 			<img class="image" src="images/chairside.png" style="width: 80%; margin: 40px">
 		</div>
 	</div>
+	<!--SCRIPT-->
+	<script type="text/javascript">
+		var tab = document.getElementsByClassName("tab");
+		var dc = document.getElementsByClassName("dropdown-content");
+		console.log("tab",tab);
+		console.log("dc",dc);
+		for (var i = 0; i < 2; i++) {
+   			dc[i].style.width = "" + tab[i+1].getBoundingClientRect().width + 'px';
+		}
+	</script>
 </body>
 </html>
